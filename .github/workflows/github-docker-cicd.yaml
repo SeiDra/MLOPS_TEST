@@ -34,15 +34,15 @@ jobs:
 
       - name: Format
         run: |
-          black app.py
+          black pipeline/app.py
 
       - name: Lint
         run: |
-          pylint --disable=R,C  app.py
+          pylint --disable=R,C pipeline/app.py
 
       - name: Test
         run: |
-          python -m pytest -vv test.py
+          python -m pytest -vv pipeline/test.py
 
   cd_pipeline:
     runs-on: ubuntu-latest 
