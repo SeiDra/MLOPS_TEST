@@ -1,3 +1,9 @@
 .venv/
 __pycache__/
 *.pyc
+
+# Fichiers et artefacts MLflow
+mlartifacts/
+mlruns/
+mlflow.db
+
